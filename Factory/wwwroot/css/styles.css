@@ -29,7 +29,7 @@ div#footer {
 	padding:14px;
   border-top: 1px solid white;
 }
-ul {
+.menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -38,21 +38,23 @@ ul {
   position: fixed;
   height: auto;
   overflow: auto;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-li a {
+.menu li a {
   display: block;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
 }
 
-li a.active {
+.menu li a.active {
   background-color: #04AA6D;
   color: white;
 }
 
-li a:hover:not(.active) {
+.menu li a:hover:not(.active) {
   background-color: #555;
   text-decoration: none;
   color: white;
