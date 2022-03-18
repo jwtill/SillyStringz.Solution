@@ -9,15 +9,17 @@ h1, h2 {
   text-align: center;
   font-family: 'Pacifico', cursive;
 }
-a {
-  color: white;
-}
+
 form {
   padding: 20px;
   margin: 20px;
 }
 label{
   margin-right: 10px;
+}
+li {
+  list-style-type: none;
+  padding: 10px;
 }
 
  ul.menu {
