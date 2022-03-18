@@ -19,16 +19,7 @@ form {
 label{
   margin-right: 10px;
 }
-div#footer {
-	position:fixed;
-	bottom:0px;
-	left:0px;
-	width:100%;
-	color:#CCC;
-	background:#333;
-	padding:14px;
-  border-top: 1px solid white;
-}
+
  ul.menu {
   list-style-type: none;
   margin: 0;
@@ -36,6 +27,8 @@ div#footer {
   width: 15%;
   background-color: #f1f1f1;
   position: fixed;
+  left: 0;
+  top: 80px;
   height: auto;
   overflow: auto;
   border-top-right-radius: 10px;
@@ -69,5 +62,7 @@ input.btn-submit {
   color: white;
 }
 .main {
+  width: 40%;
   margin: auto;
+  background-color: white;
 }
