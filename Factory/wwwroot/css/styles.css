@@ -1,9 +1,11 @@
 body {
   background-color: purple;
-  padding: 10px;
 }
 h1, h2 {
   color: white;
+  background-color: pink;
+  padding: 10px;
+  border-bottom: 1px solid black;
   text-align: center;
   font-family: 'Pacifico', cursive;
 }
@@ -28,12 +30,33 @@ div#footer {
   border-top: 1px solid white;
 }
 ul {
-  background-color: grey;
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 10px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: auto;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  text-decoration: none;
+  color: white;
+  
 }
 input.btn-submit {
   padding: 6px 16px;
