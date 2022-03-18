@@ -1,0 +1,45 @@
+body {
+  background-color: purple;
+  padding: 10px;
+}
+h1, h2 {
+  color: white;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+a {
+  color: white;
+}
+form {
+  padding: 20px;
+  margin: 20px;
+}
+label{
+  margin-right: 10px;
+}
+div#footer {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#333;
+	padding:14px;
+  border-top: 1px solid white;
+}
+ul {
+  background-color: grey;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  list-style-type: none;
+  width: 25%;
+}
+input.btn-submit {
+  padding: 6px 16px;
+  border: 1px solid #446d88;
+  background: #58a linear-gradient(#77a0bb, #58a);
+  border-radius: 4px;
+  box-shadow: 0 1px 5px gray;
+  color: white;
+}
