@@ -1,0 +1,21 @@
+@{
+  Layout = "_Layout";
+}
+@model Factory.Models.Machine
+<h2>Approve an engineer for this machine</h2>
+
+<div class="main">
+  <h4>Add an engineer to this machine: @Html.DisplayFor(model => model.Name)</h4>
+
+  @using (Html.BeginForm())
+  {
+    @Html.HiddenFor(model => model.MachineId)
+
+    @Html.Label("Select engineer")
+    @Html.DropDownList("EngineerId")
+
+    <input type="submit" value="Save" class="btn btn-submit" />
+  }
+
+
+</div>
