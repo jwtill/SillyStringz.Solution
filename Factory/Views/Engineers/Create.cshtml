@@ -1,4 +1,3 @@
-using System;
 <h2>Add a new engineer</h2>
 @{
   Layout = "_Layout";
@@ -11,7 +10,7 @@ using System;
     @Html.LabelFor(model => model.Name)
     @Html.TextBoxFor(model => model.Name)
     @Html.Label("Select machine")
-    @Html.DropDownList("MachineId")
+    @Html.DropDownList("MachineId", string.Empty)
 
     <input type="submit" value="Add new engineer" class="btn btn-submit" />
   }

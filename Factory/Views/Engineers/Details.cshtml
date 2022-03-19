@@ -17,16 +17,17 @@
     <ul>
       @foreach (var join in Model.JoinEntities)
       {
-        <li>@join.Machine.Name</li>
+        <li>@join.Machine.Name
         @using (Html.BeginForm("DeleteMachine", "Engineers"))
         {
           @Html.Hidden("joinId", @join.EngineerMachineId)
           <input type="submit" value="Remove" />
         }
+        </li>
       }
     </ul>
   }
   <p>@Html.ActionLink("Add a machine for this engineer", "AddMachine", new { id = Model.EngineerId })</p>
   <p>@Html.ActionLink("Delete this engineer", "Delete", new { id = Model.EngineerId })</p>
-  <p>@Html.ActionLink("Add another Engineer", "AddEngineer", new { id = Model.EngineerId })</p>
+  <p>@Html.ActionLink("Add another Engineer", "Create", new { id = Model.EngineerId })</p>
 </div>
