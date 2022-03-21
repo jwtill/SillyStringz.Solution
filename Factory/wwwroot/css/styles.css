@@ -1,19 +1,29 @@
+@font-face {
+  font-family: DeathStar-VmWB;
+  src: url('../fonts/DeathStar-VmWB.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background-image: url("../img/Jaawa.webp");
-  background-size: cover;
-  background-attachment: cover;
-  font-family: 'Happy Monkey', cursive;
+  background-size: 100%;
+  background-position: 0% 20%; 
+  font-family: 'Libre Franklin', sans-serif; 
 }
+
 h1 {
   color: black;
   background-color: pink;
   padding: 15px;
   border-bottom: 1px solid black;
   text-align: center;
+  opacity:.9;
+  font-family: 'DeathStar-VmWB';
 }
 h2 {
   text-align: center;
   color: white;
+  font-family: 'DeathStar-VmWB';
 }
 
 form {
@@ -46,6 +56,8 @@ li {
   overflow: auto;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  opacity:.8;
+  font-family: 'DeathStar-VmWB';
 }
 
 .menu li a {
@@ -63,7 +75,7 @@ li {
 }
 
 .menu li a:hover:not(.active) {
-  background-color: #555;
+  background-color: black;
   text-decoration: none;
   border-radius: 10px;
   color: white;
@@ -91,7 +103,7 @@ input.btn-submit {
   height: 10%;
   background-color: white;
   border-top:1px solid black;
-  opacity: .7;
+  opacity: .6;
   position: fixed;
   bottom: 0;
 }
