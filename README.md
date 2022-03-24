@@ -9,8 +9,6 @@ An MVC application that tracks the relationships between engineers and their mac
 ### Download and populate project
 - Ensure that you have installed the latest versions of Git ([instructions](https://github.com/git-guides/install-git)), as well as MySQL Workbench
 - In your command line, clone this repository using `$ git clone https://github.com/jwtill/SillyStringz.Solution`
-<!-- - Open MySQL Workbench, navigate to data import/restore, under the administration tab. Select import from self contained file and select josh_tillinghast.sql in the root folder of this project.
-- Under the import progress tab, select start import. -->
 - Make a new file called appsettings.json in the root folder of the project
 with the following text:
 {
@@ -19,7 +17,9 @@ with the following text:
   }
 }
 - Replace [YourPassword] with the password you use to connect to MySQL. 
-– Navigate to the HairSalon folder, and enter "dotnet restore" to install the required dependencies, then "dotnet run" to start the program.
+– Navigate to the Factory folder, and enter "dotnet restore" to install the required dependencies.
+- Enter "dotnet ef database update" in the Factory directory to rebuild the database.
+- Enter "dotnet run" to start the program.
 
 
 
@@ -33,6 +33,7 @@ This site incorporates the following frameworks and languages:
 - MySQL Workbench
 - MVC(Model View Controller) design
 - HTML
+- Entity
 
 The following development tools were used to develop this page:
 
